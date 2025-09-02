@@ -16,7 +16,15 @@ git clone <repository-url>
 cd gaming-qoe-conference
 ```
 
-2. Create a virtual environment and install dependencies:
+2. **Request Dataset Access**: Contact the authors via email to obtain the preprocessed datasets required for reproduction. The datasets include:
+   - `window_3_*.csv` (3-second windows)
+   - `window_5_*.csv` (5-second windows) 
+   - `window_10_*.csv` (10-second windows)
+   - `window_15_*.csv` (15-second windows)
+
+   Place these files in an `output/` directory in the repository root.
+
+3. Create a virtual environment and install dependencies:
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
@@ -105,7 +113,7 @@ gaming-qoe-conference/
 ├── model_utils.py             # ML model utilities
 ├── rank.py                    # QoE ranking functions  
 ├── requirements.txt           # Python dependencies
-├── output/                    # Preprocessed datasets
+├── output/                    # Preprocessed datasets (request from authors)
 │   ├── window_3_*.csv        # 3-second window data
 │   ├── window_5_*.csv        # 5-second window data  
 │   ├── window_10_*.csv       # 10-second window data
@@ -125,7 +133,7 @@ pip install -r requirements.txt
 ```
 
 **Dataset not found**
-Ensure all CSV files are present in the output/ directory.
+Ensure all CSV files are present in the `output/` directory. If you don't have the datasets, please contact the authors via email to request access.
 
 **Memory issues**
 The notebooks require ~2GB RAM. Close other applications if needed.
@@ -159,6 +167,15 @@ This repository is designed for paper reproduction. For questions or issues:
 
 ## 📞 Contact
 
+### Dataset Access
+To request access to the preprocessed datasets required for reproduction, please contact the authors via email. Include the following information:
+- Your name and institutional affiliation
+- Intended use of the datasets (research, education, etc.)
+- Brief description of your research interests
+
+**Email**: [yehonata.zion@msmail.ariel.ac.il]
+
+### General Questions
 For questions about the reproduction process, please open an issue in this repository.
 
 ---
