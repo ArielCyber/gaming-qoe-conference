@@ -2,7 +2,47 @@
 
 This repository contains the code and data needed to reproduce the experiments from our Gaming Quality of Experience research paper.
 
-## 📋 Quick Start
+## � Experiment Overview
+
+### Data Collection Process
+
+[![Network Impairment Demo](https://img.youtube.com/vi/a3wLD_c71nA/0.jpg)](https://youtu.be/a3wLD_c71nA)
+
+*Video: Creating controlled network impairments for QoE data collection*
+
+This video demonstrates our experimental setup for collecting labeled QoE data. We systematically introduced network impairments to create different gaming experience conditions, allowing us to collect ground-truth data across various QoE levels.
+
+### System Architecture
+
+![System Architecture](artifacts/figures/Arch.png)
+
+*System Architecture: Online and offline processing modes for QoE classification*
+
+Our system operates in two modes:
+
+- **Offline Mode**: Used for training and experimentation with collected data
+- **Online Mode**: Real-time gameplay QoE classification during active gaming sessions
+
+**Key Components:**
+- **Passive Traffic Capture**: Monitors encrypted network traffic without affecting gameplay
+- **Game Session Detection**: Identifies relevant gaming traffic (UDP, 7000-10000 port range, ≥20 PPS)
+- **Feature Extraction**: Processes raw packets into 30 network traffic features
+- **QoE Classification**: Applies trained models for real-time QoE assessment
+
+The system can be deployed at various network levels, from local routers to ISP infrastructure, making it suitable for both research and practical deployment scenarios.
+
+### Key Results Preview
+
+![XGBoost Results](artifacts/figures/confusion_matrix_XGBoost.png)
+
+*XGBoost Confusion Matrix - Strong performance across all QoE classes (81.21% accuracy)*
+
+📊 **Complete results available in:** [`artifacts/`](artifacts/) directory
+- [All model confusion matrices](artifacts/figures/) 
+- [Detailed metrics tables](artifacts/tables/)
+- [Window sensitivity analysis](artifacts/figures/window_size_metrics.png)
+
+## �📋 Quick Start
 
 ### Prerequisites
 - Python 3.11+ 
@@ -150,11 +190,11 @@ python paper_repro_utils.py
 If you use this code or data in your research, please cite our paper:
 
 ```bibtex
-@article{your-paper-2025,
-  title={Gaming Quality of Experience Research},
-  author={Your Name},
-  journal={Conference Name},
-  year={2025}
+@article{zion2026gamingQoE,
+  title={Quality of Experience Prediction for First-Person Shooter Online Gaming: The Case Study of Call of Duty},
+  author={Zion, Yehonatan and Paz, Eyal and Dubin, Ran and Dvir, Amit and Hajaj, Chen},
+  journal={CCNC 2026-IEEE Consumer Communications & Networking Conference 2026},
+  year={2026}
 }
 ```
 
