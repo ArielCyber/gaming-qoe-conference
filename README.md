@@ -2,7 +2,7 @@
 
 This repository contains the code and data needed to reproduce the experiments from our Gaming Quality of Experience research paper.
 
-## � Experiment Overview
+## 🔬 Experiment Overview
 
 ### Data Collection Process
 
@@ -42,7 +42,7 @@ The system can be deployed at various network levels, from local routers to ISP 
 - [Detailed metrics tables](artifacts/tables/)
 - [Window sensitivity analysis](artifacts/figures/window_size_metrics.png)
 
-## �📋 Quick Start
+## 📋 Quick Start
 
 ### Prerequisites
 - Python 3.11+ 
@@ -52,7 +52,7 @@ The system can be deployed at various network levels, from local routers to ISP 
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/ArielCyber/gaming-qoe-conference.git
 cd gaming-qoe-conference
 ```
 
@@ -91,7 +91,7 @@ python paper_repro_utils.py
 ```
 Validates that all dependencies and datasets are available.
 
-## �� Expected Results
+## 📊 Expected Results
 
 ### Main Experiment (3-Class QoE Classification on 10s Windows)
 | Model | Accuracy | Macro F1 | Weighted F1 |
@@ -163,7 +163,7 @@ gaming-qoe-conference/
 └── LICENSE                    # License file
 ```
 
-## �� Troubleshooting
+## 🔧 Troubleshooting
 
 ### Common Issues
 
@@ -190,11 +190,11 @@ python paper_repro_utils.py
 If you use this code or data in your research, please cite our paper:
 
 ```bibtex
-@article{zion2026gamingQoE,
-  title={Quality of Experience Prediction for First-Person Shooter Online Gaming: The Case Study of Call of Duty},
-  author={Zion, Yehonatan and Paz, Eyal and Dubin, Ran and Dvir, Amit and Hajaj, Chen},
-  journal={CCNC 2026-IEEE Consumer Communications & Networking Conference 2026},
-  year={2026}
+@inproceedings{zion2026gamingQoE,
+  title={Quality of Experience Prediction for First-Person Shooter Online Gaming: The Case Study of Call of Duty},
+  author={Zion, Yehonatan and Paz, Eyal and Dubin, Ran and Dvir, Amit and Hajaj, Chen},
+  journal={CCNC 2026-IEEE Consumer Communications & Networking Conference 2026},
+  year={2026}
 }
 ```
 
