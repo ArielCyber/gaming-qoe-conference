@@ -140,6 +140,10 @@ We use **experiment-based splitting** where every 4th experiment is reserved for
 - Features include packet sizes, packet rates, and directional ratios
 - Data from multiple window sizes (3s, 5s, 10s, 15s)
 
+### Feature Extraction Availability
+
+**⚠️ NOTE:** Currently, the feature extraction process is not publicly exposed because the paper is under review. After publication, we will provide tools to extract features directly from PCAP game session files. Meanwhile, the notebook **paper_repro.ipynb** contains the columns and details of the features that should be extracted for reproducibility.
+
 ### QoE Classification
 - **3-class QoE prediction** based on ping latency thresholds
 - Classes: Good (Class 1), Fair (Class 2), Poor (Class 3)
